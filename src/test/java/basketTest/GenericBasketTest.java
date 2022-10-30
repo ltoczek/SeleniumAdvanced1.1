@@ -12,9 +12,9 @@ public class GenericBasketTest extends Pages {
 
     OrderList expectedOrderList = new OrderList();
 
-    @RepeatedTest(10)
+    //@RepeatedTest(10)
     @Test
-    public void mainTest() {
+    public void shoudAddAndRemoveProductsFromBasket() {
 
         for (int i = 0; i < quantityProducts(); i++) {
             topMenuPage.selectRandomCategory();
