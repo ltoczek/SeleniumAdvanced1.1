@@ -19,14 +19,15 @@ public class BasketPage extends BasePage {
     @FindBy(css = ".remove-from-cart")
     private List<WebElement> removeButtons;
 
-    public List<ProductInBasketPage> getProductsFromBasket(){
-        return products.stream().map(product -> new ProductInBasketPage(driver,product)).toList();
-    }
-    public double getTotalPrice(){
-        return getPrice(totalPrice,'$');
+    public List<ProductInBasketPage> getProductsFromBasket() {
+        return products.stream().map(product -> new ProductInBasketPage(driver, product)).toList();
     }
 
-    public void removeProduct(){
+    public double getTotalPrice() {
+        return getPrice(totalPrice, '$');
+    }
+
+    public void removeProduct() {
         click(removeButtons.get(0));
         waitForElementBeInvisible(removeButtons.get(0));
     }

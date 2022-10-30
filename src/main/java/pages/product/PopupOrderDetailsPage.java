@@ -13,16 +13,12 @@ public class PopupOrderDetailsPage extends BasePage {
 
     @FindBy(id = "myModalLabel")
     private WebElement popupHeaderLabel;
-
     @FindBy(css = ".btn-secondary")
     private WebElement continueShoppingButton;
-
     @FindBy(css = ".product-name")
     private WebElement productName;
-
     @FindBy(xpath = "//div[@class='col-md-6']/p")
     private WebElement productPrice;
-
     @FindBy(css = ".product-quantity strong")
     private WebElement productQuantity;
 

@@ -19,9 +19,7 @@ public class TopMenuPage extends BasePage {
     private WebElement accesories;
     @FindBy(id = "category-9")
     private WebElement art;
-
     private List<WebElement> categories = List.of(clothes,accesories,art);
-
     public void selectRandomCategory(){
         clickRandomElement(categories);
     }

@@ -13,13 +13,10 @@ public class ProductPage extends BasePage {
 
     @FindBy(id = "quantity_wanted")
     private WebElement quantityInput;
-
     @FindBy(css = ".product-message")
     private WebElement productMessege;
-
     @FindBy(name = "submitCustomizedData")
     private WebElement saveCustomizationButton;
-
     @FindBy(css = ".add-to-cart")
     private WebElement addToCartButton;
 

@@ -14,13 +14,10 @@ public class ProductInBasketPage extends BasePage {
 
     @FindBy(css = ".product-line-info a")
     private WebElement name;
-
     @FindBy(css = ".current-price span")
     private WebElement price;
-
     @FindBy(css = ".js-cart-line-product-quantity")
     private WebElement quantity;
-
     @FindBy(css = ".product-price strong")
     private WebElement totalPrice;
 
